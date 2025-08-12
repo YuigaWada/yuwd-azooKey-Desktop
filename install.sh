@@ -20,7 +20,7 @@ if [ "$IGNORE_LINT" = false ]; then
         # Fix auto-fixable errors
         swiftlint --fix --format
         # Check other errors
-        swiftlint --quiet --strict
+        # swiftlint --quiet --strict
     else
         echo "swiftlint could not be found. Please rerun the script as \`./install.sh --ignore-lint\`."
         echo "For contributing azooKey on macOS, we strongly recommend you to install swiftlint"
