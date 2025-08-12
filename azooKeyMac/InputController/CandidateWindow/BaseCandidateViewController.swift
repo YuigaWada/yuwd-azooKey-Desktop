@@ -276,14 +276,22 @@ extension BaseCandidateViewController: NSTableViewDelegate, NSTableViewDataSourc
     }
 
     func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
-        let identifier = NSUserInterfaceItemIdentifier("CandidateRowView")
-        var rowView = tableView.makeView(withIdentifier: identifier, owner: nil) as? NSTableRowView
+        let identifier = NSUserInterfaceItemIdentifier("CustomCandidateRowView")
+        var rowView = tableView.makeView(withIdentifier: identifier, owner: nil) as? CustomCandidateRowView
 
         if rowView == nil {
-            rowView = NSTableRowView()
+            rowView = CustomCandidateRowView()
             rowView?.identifier = identifier
         }
 
         return rowView
+    }
+}
+
+final class CustomCandidateRowView: NSTableRowView {
+    override func drawSelection(in dirtyRect: NSRect) {
+        guard selectionHighlightStyle != .none, isSelected else { return }
+        NSColor(calibratedRed: 0.36, green: 0.12, blue: 0.78, alpha: 1.0).setFill()
+        dirtyRect.fill()
     }
 }
