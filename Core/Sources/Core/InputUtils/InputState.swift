@@ -50,6 +50,11 @@ public enum InputState: Sendable, Hashable {
             switch userAction {
             case .input, .deadKey:
                 break
+            case .function(let function):
+                if function != .seven {
+                    return (.fallthrough, .fallthrough)
+                }
+                return (.submitKatakanaCandidate, .transition(.none))
             default:
                 return (.fallthrough, .fallthrough)
             }

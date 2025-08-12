@@ -85,6 +85,15 @@ extension UserAction {
             } else {
                 return .unknown
             }
+        case 0x07: // Option + x
+            if event.modifierFlags.contains(.option) {
+                // F7 相当（Katakana 変換）
+                return .function(.seven)
+            } else if let text = event.characters, isPrintable(text) {
+                return .input(keyMap(text))
+            } else {
+                return .unknown
+            }
         case 0x1F: // Control + o
             if event.modifierFlags.contains(.control) {
                 return .editSegment(1)  // Shift segment cursor right
