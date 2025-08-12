@@ -6,7 +6,7 @@
 - デザインを少しだけ変更
 
 > [!IMPORTANT]
-> This project is based on [azooKey-Desktop](https://github.com/ensan-hcl/azooKey-Desktop), which is licensed under the MIT License.  
+> This repo is based on [azooKey-Desktop](https://github.com/ensan-hcl/azooKey-Desktop), which is licensed under the MIT License.  
 > Modifications have been made by Yuiga Wada (2025).
 
 
