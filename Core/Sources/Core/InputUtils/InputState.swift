@@ -137,11 +137,8 @@ public enum InputState: Sendable, Hashable {
             case .escape:
                 return (.stopComposition, .transition(.none))
             case .space:
-                if liveConversionEnabled {
-                    return (.enterCandidateSelectionMode, .transition(.selecting))
-                } else {
-                    return (.enterFirstCandidatePreviewMode, .transition(.previewing))
-                }
+                // Always open candidate selection on first Space to show suggestions immediately
+                return (.enterCandidateSelectionMode, .transition(.selecting))
             case let .function(function):
                 switch function {
                 case .six:
