@@ -2,6 +2,7 @@
 
 - [azooKey-Desktop](https://github.com/ensan-hcl/azooKey-Desktop) をyuwd専用にカスタマイズしたもの．
 - Option+xでカタカナに変換
+- スペースで確定する際に必ず他の候補も見れるように
 - mainブランチ最新のAzooKeyKanaKanjiConverterを使用
 - デザインを少しだけ変更
 
@@ -11,5 +12,4 @@
 
 
 ## todo
-- [ ] スペースで確定する際に必ず他の候補も見れるように
 - [ ] 英語の入力を簡便化できるように
