@@ -4,3 +4,6 @@
 [submodule "azooKeyMac/Resources/zenz-v3-small-gguf"]
 	path = azooKeyMac/Resources/zenz-v3-small-gguf
 	url = https://huggingface.co/Miwa-Keita/zenz-v3-small-gguf
+[submodule "Tuner"]
+	path = Tuner
+	url = git@github.com:azooKey/Tuner.git
