@@ -11,7 +11,7 @@
 			<key>com.apple.inputmethod.Japanese</key>
 			<dict>
 				<key>TISIconIsTemplate</key>
-				<true/>
+				<false/>
 				<key>TISInputSourceID</key>
 				<string>dev.yuiga.inputmethod.azooKeyMac.Japanese</string>
 				<key>TISIntendedLanguage</key>
@@ -42,7 +42,7 @@
 			<key>com.apple.inputmethod.Roman</key>
 			<dict>
 				<key>TISIconIsTemplate</key>
-				<true/>
+				<false/>
 				<key>TISInputSourceID</key>
 				<string>dev.yuiga.inputmethod.azooKeyMac.Roman</string>
 				<key>TISIntendedLanguage</key>
